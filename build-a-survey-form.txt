@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<style>
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #316186;
+  color: #C6E6FF;
+}
+
+h1, p{
+  margin: 1em auto;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #C6E6FF;
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+inline{
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input.inline{
+  width: 250;
+  height: 20;
+}
+
+</style> 
+</head>
+
+<h1 id="title">Favorite Cat Breed</h1>
+<p id="description">This is a servey to see what kind of felines people like :p</p>
+  <form id="survey-form">
+    <fieldset>
+      <label class="name" id="name-label">Name:</label>
+     <input required id="name" placeholder="Kam:" type="text">
+    <label class="email" id="email-label">Email:</label>
+     <input required id="email" placeholder="kam123@gmail.com" type="email">
+    <label class="age" id="number-label">Age:</label>
+     <input id="number" placeholder="22" type="number" min="10" max="100">
+     <select id="dropdown">
+       <option value="">(Select one)</option>
+       <option value="1">Orange Cat</option>
+       <option value="2">Black Cat</option>
+       <option value="3">White Cat</option>
+       <option value="4">Calico Cat</option>
+       <option value="5">Brown Cat</option
+       </select>
+       </fieldset>
+       <fieldset>
+         <label for="allergic"><input type="radio" id="is-allergic" name="allergies" class="inline" value="allergic"/>Allergic</label>
+       <label for="not-allergic"><input type="radio" id="is-not-allergic" name="allergies" class="inline" value="not-allergic"/>Not Allergic</labe>
+       <label for="cats-are-superior"><input id="cats-are-superior" type="checkbox" required name="superior-cats" class="inline" value="17"/>Cats are superior
+       </label>
+       <label for="cats-are-precious"><input id="cats-are-precious" type="checkbox" required name="precious-cats" class="inline" value="71"/>Cats are precious
+       </label>
+         </fieldset>
+         <label for="cats">Why do you like this specific breed?
+         <textarea id="why" name="why-2" rows="4" placeholder="Type here . . ."></textarea>
+       <input id="submit" type="submit" button value="Submit">
+    </form>
+</html>
+
+
+
